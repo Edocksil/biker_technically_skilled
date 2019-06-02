@@ -1,0 +1,11 @@
+{% extends 'car/base.html' %}
+
+
+{% block content %}
+    {% for story in storys %}
+        <div class="story">
+
+            <h1><a href="{% url 'story_detail' pk=story.pk %}">{{ story.last_added_text }}</a></h1>
+        </div>
+    {% endfor %}
+{% endblock %}

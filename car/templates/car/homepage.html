@@ -1,0 +1,20 @@
+{% extends 'car/base.html' %}
+{% block content %}
+
+
+		<h4> Home page for Django</h4>
+
+
+    {% if user.is_authenticated %}
+
+        <p>continue story</p>
+        <p><a href="{% url 'story_list' %}">finished stories</p>
+        <br>
+        <p><a href="{% url 'logout' %}">logout</p>
+    {% else %}
+        <p><a href="{% url 'registration' %}">register</p>
+        <p><a href="{% url 'login' %}">login</p>
+    {% endif %}
+
+
+{% endblock %}
