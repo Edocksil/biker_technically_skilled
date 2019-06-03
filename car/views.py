@@ -9,6 +9,8 @@ from django.contrib.auth import login
 from django.http import HttpResponseRedirect
 from django.views.generic.base import View
 from django.contrib.auth import logout
+from .forms import StoryForm
+from .forms import StoryAddForm
 
 # Create your views here.
 def homepage(request):
@@ -67,5 +69,42 @@ def story_list(request):
 def story_detail(request, pk):
     story = get_object_or_404(Story, pk=pk)
     return render(request, 'car/story_detail.html', {'story': story})
+
+def story_add(request):
+    if request.method == "POST":
+        form = StoryForm(request.POST)
+        if form.is_valid():
+            story = form.save(commit=False)
+            story.save()
+            story.contributors.add(request.user)
+            story.finished = False
+            story.text = story.last_added_text
+            story.first_added_text_or_name=story.last_added_text
+            story.save()
+            return redirect('homepage')
+    else:
+        form = StoryForm()
+    return render(request, 'car/story_add.html', {'form':form})
+
+def story_continue(request):
+    story_rand = Story.objects.filter(finished=False).order_by("?").first()
+
+    if request.method == "POST":
+        form = StoryAddForm(request.POST, instance=story_rand)
+        if form.is_valid():
+            story = form.save(commit=False)
+            story.contributors.add(request.user)
+            story.text = story.text + "/n" + story.last_added_text
+
+            if (story.contributors.count()<=1):
+                story.finished=False
+            else:
+                story.finished = story.finished
+
+            story.save()
+            return redirect('homepage')
+    else:
+        form = StoryAddForm()
+    return render(request, 'car/story_continue.html', {'form':form , 'story_rand':story_rand})
 
 

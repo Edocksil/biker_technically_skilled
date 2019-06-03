@@ -8,5 +8,7 @@ urlpatterns = [
     path('logout/', views.LogoutView.as_view(), name='logout'),
     path('story_list/', views.story_list, name='story_list'),
     path('story_list/story/<int:pk>/', views.story_detail, name='story_detail'),
+    path('story_add/', views.story_add, name='story_add'),
+    path('story_continue/', views.story_continue, name='story_continue'),
 
 ]
