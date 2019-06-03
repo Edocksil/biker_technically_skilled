@@ -62,8 +62,11 @@ class RegisterFormView(FormView):
         return super(RegisterFormView, self).form_valid(form)
 
 def story_list(request):
-    storys = Story.objects.filter(contributors=request.user, finished=True)
-    return render(request, 'car/story_list.html', {'storys': storys})
+    if (User.is_authenticated):
+        storys = Story.objects.filter(contributors=request.user, finished=True)
+        return render(request, 'car/story_list.html', {'storys': storys})
+    else:
+        render(request, '',{})
 
 
 def story_detail(request, pk):
@@ -86,6 +89,7 @@ def story_add(request):
         form = StoryForm()
     return render(request, 'car/story_add.html', {'form':form})
 
+
 def story_continue(request):
     story_rand = Story.objects.filter(finished=False).order_by("?").first()
 
@@ -94,9 +98,9 @@ def story_continue(request):
         if form.is_valid():
             story = form.save(commit=False)
             story.contributors.add(request.user)
-            story.text = story.text + "/n" + story.last_added_text
+            story.text = story.text + "\n" + story.last_added_text
 
-            if (story.contributors.count()<=1):
+            if (story.contributors.count()<1):
                 story.finished=False
             else:
                 story.finished = story.finished
