@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e661561f-59ec-4581-8859-a2c120c670be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/car/templates/car/story_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/car/story_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car/templates/car/no_storys_left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/story_continue.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/car/story_continue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/car/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
@@ -31,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="e#630#662#0" expanded="true" />
               </folding>
@@ -42,51 +46,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="168">
+              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/car/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="64" column="20" selection-start-line="64" selection-end-line="65" />
+            <state relative-caret-position="585">
+              <caret line="130" column="29" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
-                <element signature="e#631#1133#0" />
-                <element signature="e#883#1133#0" />
-                <element signature="e#1164#1403#0" />
-                <element signature="e#1444#2035#0" />
+                <element signature="e#692#1194#0" />
+                <element signature="e#1225#1464#0" />
+                <element signature="e#1505#2096#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/templates/car/story_add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/templates/car/story_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/car/templates/car/story_list.html">
+        <entry file="file://$PROJECT_DIR$/car/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +82,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/templates/car/story_continue.html">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/templates/car/story_list.html">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -105,8 +102,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -138,16 +135,17 @@
         <option value="$PROJECT_DIR$/car/templates/car/base.html" />
         <option value="$PROJECT_DIR$/car/urls.py" />
         <option value="$PROJECT_DIR$/car/templates/car/homepage.html" />
-        <option value="$PROJECT_DIR$/car/templates/car/story_continue.html" />
         <option value="$PROJECT_DIR$/car_proj/lib/python3.6/site-packages/django/forms/models.py" />
         <option value="$PROJECT_DIR$/car/templates/car/story_add.html" />
         <option value="$PROJECT_DIR$/car/forms.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/car/models.py" />
         <option value="$PROJECT_DIR$/car/admin.py" />
         <option value="$PROJECT_DIR$/car/templates/car/story_list.html" />
-        <option value="$PROJECT_DIR$/car/views.py" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/car/models.py" />
+        <option value="$PROJECT_DIR$/car/templates/car/story_continue.html" />
+        <option value="$PROJECT_DIR$/car/templates/car/no_storys_left.html" />
+        <option value="$PROJECT_DIR$/car/views.py" />
       </list>
     </option>
   </component>
@@ -155,7 +153,7 @@
     <option name="x" value="993" />
     <option name="y" value="25" />
     <option name="width" value="927" />
-    <option name="height" value="1055" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -163,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +199,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,15 +254,9 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysite/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/tests.py" />
+    <entry file="file://$PROJECT_DIR$/mysite/views.py" />
+    <entry file="file://$PROJECT_DIR$/mysite/apps.py" />
     <entry file="file://$USER_HOME$/envs/buy_car_tech_nah_r/lib/python3.6/site-packages/django/db/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -277,43 +269,10 @@
     <entry file="file://$USER_HOME$/envs/buy_car_tech_nah_r/lib/python3.6/site-packages/django/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/buy_cat_tech_nah_r/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/buy_cat_tech_nah_r/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#651#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/buy_cat_tech_nah_r/settings.py" />
+    <entry file="file://$PROJECT_DIR$/buy_cat_tech_nah_r/urls.py" />
+    <entry file="file://$PROJECT_DIR$/mysite/admin.py" />
+    <entry file="file://$PROJECT_DIR$/mysite/models.py" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -337,9 +296,6 @@
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/car/templates/car/register.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -385,37 +341,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/story_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -432,12 +361,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/story_continue.html">
+    <entry file="file://$PROJECT_DIR$/car/templates/car/story_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state>
+          <caret column="25" selection-end-line="1" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/car/templates/car/story_add.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -446,34 +398,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="64" column="20" selection-start-line="64" selection-end-line="65" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-            <element signature="e#631#1133#0" />
-            <element signature="e#883#1133#0" />
-            <element signature="e#1164#1403#0" />
-            <element signature="e#1444#2035#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="168">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/car/story_continue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -481,6 +426,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/car/no_storys_left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="130" column="29" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+            <element signature="e#692#1194#0" />
+            <element signature="e#1225#1464#0" />
+            <element signature="e#1505#2096#0" />
+          </folding>
         </state>
       </provider>
     </entry>

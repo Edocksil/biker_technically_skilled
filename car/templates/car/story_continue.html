@@ -2,8 +2,9 @@
 
 {% block content %}
     <h1>continue post</h1>
-    {{ story_rand.last_added_text }}
-
+    <p>{{ story_rand.last_added_text }} </p>
+    <p>{{ story_rand.count  }}</p>
+    <p>{{ last_user }}</p>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>

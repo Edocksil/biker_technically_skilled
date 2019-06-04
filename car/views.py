@@ -62,18 +62,24 @@ class RegisterFormView(FormView):
         return super(RegisterFormView, self).form_valid(form)
 
 def story_list(request):
-    if (User.is_authenticated):
-        storys = Story.objects.filter(contributors=request.user, finished=True)
-        return render(request, 'car/story_list.html', {'storys': storys})
-    else:
-        render(request, '',{})
-
+    try:
+        if (User.is_authenticated):
+            storys = Story.objects.filter(contributors=request.user, finished=True)
+            return render(request, 'car/story_list.html', {'storys': storys})
+        else:
+            render(request, '',{})
+    except TypeError:
+        return render(request, 'car/homepage.html')
 
 def story_detail(request, pk):
     story = get_object_or_404(Story, pk=pk)
     return render(request, 'car/story_detail.html', {'story': story})
 
 def story_add(request):
+    try:
+        storys = Story.objects.filter(contributors=request.user)
+    except TypeError:
+        return render(request, 'car/homepage.html')
     if request.method == "POST":
         form = StoryForm(request.POST)
         if form.is_valid():
@@ -83,6 +89,7 @@ def story_add(request):
             story.finished = False
             story.text = story.last_added_text
             story.first_added_text_or_name=story.last_added_text
+            story.count = 1
             story.save()
             return redirect('homepage')
     else:
@@ -91,7 +98,28 @@ def story_add(request):
 
 
 def story_continue(request):
-    story_rand = Story.objects.filter(finished=False).order_by("?").first()
+    try:
+        storys = Story.objects.filter(contributors=request.user)
+    except TypeError:
+        return render(request, 'car/homepage.html')
+
+    story_rand = ''
+    last_user = ''
+    x=True
+    retries = 0
+    try:
+        while(x):
+            retries += 1
+            story_rand = Story.objects.filter(finished=False).order_by("?").first()
+            last_user= story_rand.contributors.last()
+            if (last_user.get_username()!= User.get_username(request.user)):
+                x=False
+            if (retries>10):
+                raise ZeroDivisionError('no stories for you')
+    except AttributeError:
+        return render(request, 'car/no_storys_left.html')
+    except ZeroDivisionError:
+        return render(request, 'car/no_storys_left.html')
 
     if request.method == "POST":
         form = StoryAddForm(request.POST, instance=story_rand)
@@ -100,15 +128,15 @@ def story_continue(request):
             story.contributors.add(request.user)
             story.text = story.text + "\n" + story.last_added_text
 
-            if (story.contributors.count()<1):
+            if (story.count<5):
                 story.finished=False
             else:
                 story.finished = story.finished
-
+            story.count += 1
             story.save()
             return redirect('homepage')
     else:
         form = StoryAddForm()
-    return render(request, 'car/story_continue.html', {'form':form , 'story_rand':story_rand})
+    return render(request, 'car/story_continue.html', {'form':form , 'story_rand':story_rand , 'last_user':last_user})
 
 
