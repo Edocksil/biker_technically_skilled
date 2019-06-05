@@ -116,8 +116,13 @@ def story_continue(request):
     except ZeroDivisionError:
         return render(request, 'story/no_storys_left.html')
 
+    if story_rand.count<5:
+        StoryFormVar = StoryForm(request.POST, instance=story_rand)
+    else:
+        StoryFormVar = StoryAddForm(request.POST, instance=story_rand)
+
     if request.method == "POST":
-        form = StoryAddForm(request.POST, instance=story_rand)
+        form = StoryFormVar
         if form.is_valid():
             story = form.save(commit=False)
             story.contributors.add(request.user)
@@ -131,7 +136,7 @@ def story_continue(request):
             story.save()
             return redirect('homepage')
     else:
-        form = StoryAddForm()
+        form = StoryFormVar
     return render(request, 'story/story_continue.html', {'form': form , 'story_rand': story_rand , 'last_user':last_user})
 
 
