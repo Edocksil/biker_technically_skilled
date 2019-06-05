@@ -1,5 +1,9 @@
 {% extends "car/base.html" %}
 
 {% block content %}
-
+    <p>all stories: {{ full_statistic.total_stories }}</p>
+    <p>finished:  {{ full_statistic.finished_stories }}</p>
+    <p>not finished: {{ full_statistic.unfinished_stories }}</p>
+    <p>best contributor: {{ full_statistic.best_user.username }} {{ full_statistic.best_count }}</p>
+    <p>worst contributor: {{ full_statistic.worst_user.username }} {{ full_statistic.worst_count }}</p>
 {% endblock %}

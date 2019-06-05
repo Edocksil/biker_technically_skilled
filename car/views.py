@@ -8,6 +8,8 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from .forms import StoryForm, StoryAddForm
+from django.db.models import Count
+
 
 # Create your views here.
 def homepage(request):
@@ -132,6 +134,31 @@ def story_continue(request):
         form = StoryAddForm()
     return render(request, 'story/story_continue.html', {'form': form , 'story_rand': story_rand , 'last_user':last_user})
 
+
+class Stat:
+    def __init__(self, name):
+        self.name = name
+        self.finished_stories=Story.objects.filter(finished=True).count()
+        self.unfinished_stories=Story.objects.filter(finished=False).count()
+        self.total_stories=Story.objects.count()
+
+        self.best_contributor=Story.objects.values('contributors').annotate(dcontributor=Count('contributors')).order_by('-dcontributor').first()
+        self.best_count=self.best_contributor.get( 'dcontributor')
+        self.best_user=User.objects.filter(id=self.best_contributor['contributors']).values('username').get()
+
+
+        self.worst_contributor=Story.objects.values('contributors').annotate(dcontributor=Count('contributors')).order_by('dcontributor').first()
+        self.worst_count=self.worst_contributor.get( 'dcontributor')
+        self.worst_user=User.objects.filter(id=self.worst_contributor['contributors']).values('username').get()
+
+def statistics(request):
+    try:
+        storys = Story.objects.filter(contributors=request.user)
+    except TypeError:
+        return render(request, 'story/homepage.html')
+
+    full_statistic=Stat('Stat_object')
+    return render(request,'car/statistics.html', {'full_statistic':full_statistic})
 
 
 
