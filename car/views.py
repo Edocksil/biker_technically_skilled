@@ -87,6 +87,7 @@ def story_add(request):
             story.text = story.last_added_text
             story.first_added_text_or_name=story.last_added_text
             story.count = 1
+            story.last = request.user.username
             story.save()
             return redirect('homepage')
     else:
@@ -106,8 +107,8 @@ def story_continue(request):
         while(x):
             retries += 1
             story_rand = Story.objects.filter(finished=False).order_by("?").first()
-            last_user= story_rand.contributors.last()
-            if (last_user.get_username()!= User.get_username(request.user)):
+            last_user= story_rand.last
+            if (last_user!= User.get_username(request.user)):
                 x = False
             if (retries > 10):
                 raise ZeroDivisionError('no stories for you')
@@ -127,7 +128,7 @@ def story_continue(request):
             story = form.save(commit=False)
             story.contributors.add(request.user)
             story.text = story.text + "\n" + story.last_added_text
-
+            story.last = request.user.username
             if (story.count<5):
                 story.finished = False
             else:

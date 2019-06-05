@@ -9,5 +9,6 @@ class Story(models.Model):
     finished = models.BooleanField(default=False)
     contributors = models.ManyToManyField(User)
     count = models.IntegerField(default=0)
+    last = models.TextField(max_length=40,default='')
     def __str__(self):
         return self.first_added_text_or_name
