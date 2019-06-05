@@ -2,11 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e661561f-59ec-4581-8859-a2c120c670be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/buy_car_tech_nah_r.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/buy_car_tech_nah_r.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/static/css/car.css" beforeDir="false" afterPath="$PROJECT_DIR$/car/static/css/car.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/car/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/car/templates/car/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/car/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/no_storys_left.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/register.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/car/templates/car/statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/car/statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/story_add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/story_continue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/story_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/car/story_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/story/no_storys_left.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/story/no_storys_left.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/story/story_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/story/story_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/story/story_continue.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/story/story_continue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/story/story_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/story/story_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/templates/story/story_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/car/templates/story/story_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/car/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/car/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,27 +40,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/views.py">
+        <entry file="file://$PROJECT_DIR$/car/templates/car/statistics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="160" selection-start-line="160" selection-end-line="160" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-                <element signature="e#522#569#0" />
-                <element signature="e#615#1440#1" />
-                <element signature="e#1480#2086#0" />
-                <element signature="e#2117#2448#0" />
-                <element signature="e#2626#3330#0" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/car/templates/car/statistics.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/templates/story/story_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="66">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -45,29 +60,78 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/car/templates/car/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            <state relative-caret-position="176">
+              <caret line="62" column="72" selection-start-line="62" selection-start-column="72" selection-end-line="62" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/models.py">
+        <entry file="file://$PROJECT_DIR$/car/templates/story/story_continue.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/templates/story/story_add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/static/css/car.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car/templates/car/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car/templates/car/story_list.html">
+        <entry file="file://$PROJECT_DIR$/car/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="99" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="99" />
+            <state relative-caret-position="337">
+              <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/car/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="135" column="38" lean-forward="true" selection-start-line="135" selection-start-column="38" selection-end-line="135" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+                <element signature="e#666#1491#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,29 +175,37 @@
         <option value="$PROJECT_DIR$/car/templates/car/story_detail.html" />
         <option value="$PROJECT_DIR$/car/templates/car/register.html" />
         <option value="$PROJECT_DIR$/car/templates/car/login.html" />
-        <option value="$PROJECT_DIR$/car/templates/car/base.html" />
         <option value="$PROJECT_DIR$/car_proj/lib/python3.6/site-packages/django/forms/models.py" />
         <option value="$PROJECT_DIR$/car/templates/car/story_add.html" />
         <option value="$PROJECT_DIR$/car/forms.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/car/admin.py" />
         <option value="$PROJECT_DIR$/car/templates/car/story_list.html" />
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/car/templates/car/story_continue.html" />
         <option value="$PROJECT_DIR$/car/templates/car/no_storys_left.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/car/urls.py" />
+        <option value="$PROJECT_DIR$/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/car/templates/registration/register.html" />
+        <option value="$PROJECT_DIR$/car/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/car/models.py" />
-        <option value="$PROJECT_DIR$/car/templates/car/homepage.html" />
-        <option value="$PROJECT_DIR$/car/views.py" />
+        <option value="$PROJECT_DIR$/car/templates/story/no_storys_left.html" />
+        <option value="$PROJECT_DIR$/car/templates/story/story_detail.html" />
+        <option value="$PROJECT_DIR$/car/templates/story/story_list.html" />
+        <option value="$PROJECT_DIR$/car/templates/story/story_add.html" />
         <option value="$PROJECT_DIR$/car/templates/car/statistics.html" />
+        <option value="$PROJECT_DIR$/car/templates/car/homepage.html" />
+        <option value="$PROJECT_DIR$/car/templates/story/story_continue.html" />
+        <option value="$PROJECT_DIR$/car/static/css/car.css" />
+        <option value="$PROJECT_DIR$/car/templates/car/base.html" />
+        <option value="$PROJECT_DIR$/car/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="993" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1053" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -141,68 +213,83 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buy_car_tech_nah_r" type="462c0819:PsiDirectoryNode" />
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buy_car_tech_nah_r" type="462c0819:PsiDirectoryNode" />
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
               <item name="car" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buy_car_tech_nah_r" type="462c0819:PsiDirectoryNode" />
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
               <item name="car" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buy_car_tech_nah_r" type="462c0819:PsiDirectoryNode" />
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
               <item name="car" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buy_car_tech_nah_r" type="462c0819:PsiDirectoryNode" />
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
               <item name="car" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="car" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buy_car_tech_nah_r" type="462c0819:PsiDirectoryNode" />
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
               <item name="car" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buy_car_tech_nah_r" type="462c0819:PsiDirectoryNode" />
-              <item name="car_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
+              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="story" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buy_car_tech_nah_r" type="462c0819:PsiDirectoryNode" />
+              <item name="biker_technically_skilled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biker_technically_skilled" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="buy_car_tech_nah_r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -226,13 +313,29 @@
   <component name="SvnConfiguration">
     <configuration />
   </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e661561f-59ec-4581-8859-a2c120c670be" name="Default Changelist" comment="" />
+      <created>1559752707545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559752707545</updated>
+      <workItem from="1559752709207" duration="1817000" />
+      <workItem from="1559754536445" duration="24103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25920000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12622951" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23087248" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="DB Browser" order="2" weight="0.3295082" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988938" weight="0.3294979" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -244,59 +347,57 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32914045" />
       <window_info anchor="bottom" id="DB Execution Console" order="9" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49446902" visible="true" weight="0.32285115" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49446902" visible="true" weight="0.24098124" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50553095" side_tool="true" weight="0.32914045" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32914045" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="DB Browser" order="2" weight="0.3295082" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4988938" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32914045" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49446902" visible="true" weight="0.24098124" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50553095" side_tool="true" weight="0.32914045" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32914045" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mysite/tests.py" />
     <entry file="file://$PROJECT_DIR$/mysite/views.py" />
     <entry file="file://$PROJECT_DIR$/mysite/apps.py" />
-    <entry file="file://$USER_HOME$/envs/buy_car_tech_nah_r/lib/python3.6/site-packages/django/db/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/envs/buy_car_tech_nah_r/lib/python3.6/site-packages/django/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/envs/buy_car_tech_nah_r/lib/python3.6/site-packages/django/db/models/__init__.py" />
+    <entry file="file://$USER_HOME$/envs/buy_car_tech_nah_r/lib/python3.6/site-packages/django/__init__.py" />
     <entry file="file://$PROJECT_DIR$/buy_cat_tech_nah_r/settings.py" />
     <entry file="file://$PROJECT_DIR$/buy_cat_tech_nah_r/urls.py" />
     <entry file="file://$PROJECT_DIR$/mysite/admin.py" />
     <entry file="file://$PROJECT_DIR$/mysite/models.py" />
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/__init__.py">
@@ -305,13 +406,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/envs/buy_car_tech_nah_r/lib/python3.6/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="440" column="8" selection-start-line="440" selection-start-column="8" selection-end-line="440" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/envs/buy_car_tech_nah_r/lib/python3.6/site-packages/django/forms/models.py" />
     <entry file="file://$PROJECT_DIR$/car_proj/lib/python3.6/site-packages/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -326,81 +421,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/story_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/story_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/no_storys_left.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/story_continue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/car/login.html" />
     <entry file="file://$PROJECT_DIR$/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -408,49 +429,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/models.py">
+    <entry file="file://$PROJECT_DIR$/car/templates/car/story_list.html" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/car/story_add.html" />
+    <entry file="file://$PROJECT_DIR$/car/templates/car/story_continue.html" />
+    <entry file="file://$PROJECT_DIR$/car/templates/car/story_detail.html" />
+    <entry file="file://$PROJECT_DIR$/car/templates/car/no_storys_left.html" />
+    <entry file="file://$PROJECT_DIR$/car/templates/car/register.html" />
+    <entry file="file://$PROJECT_DIR$/car/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="4" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/story_list.html">
+    <entry file="file://$PROJECT_DIR$/car/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="99" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="99" />
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/templates/car/homepage.html">
+    <entry file="file://$PROJECT_DIR$/car/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/django/urls/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="1760">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car/views.py">
+    <entry file="file://$PROJECT_DIR$/car/templates/car/about.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/registration/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        <state relative-caret-position="66">
+          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/story/story_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
-            <element signature="e#522#569#0" />
-            <element signature="e#615#1440#1" />
-            <element signature="e#1480#2086#0" />
-            <element signature="e#2117#2448#0" />
-            <element signature="e#2626#3330#0" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/story/no_storys_left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/car/templates/car/statistics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="132">
+          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/car/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="62" column="72" selection-start-line="62" selection-start-column="72" selection-end-line="62" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Downloads/Telegram Desktop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/story/story_continue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/story/story_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/story/story_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/static/css/car.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/templates/car/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="135" column="38" lean-forward="true" selection-start-line="135" selection-start-column="38" selection-end-line="135" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+            <element signature="e#666#1491#1" />
+          </folding>
         </state>
       </provider>
     </entry>

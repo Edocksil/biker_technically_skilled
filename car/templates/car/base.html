@@ -1,27 +1,63 @@
-{% load staticfiles %}
+{% load static from staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <title>Fabulist</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" type="text/css">
-        <link rel="stylesheet" href="{% static 'css/car.css' %}">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fabulist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/car.css' %}">
     </head>
     <body>
-        <div class="page-header">
-            <h1><a href="/">Fabulist</a></h1>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark text-center">
+    <div class="container">
+        <a class="navbar-brand" href="/"><i class='fas fa-book-reader' style='font-size:48px;color:yellow'></i></a>
+            {% if user.is_authenticated %}
+            <span class="navbar-text ">
+                Hello, {{ user.username }}
+            </span>
+            {% endif %}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'story_add' %}">New story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'story_continue' %}">Continue story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'story_list' %}">My finished stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'statistics' %}">Statistics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Log out</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'registration' %}">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Login</a>
+                </li>
+                {% endif %}
+            </ul>
         </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-
-                {% block content %}
-                {% endblock %}
-
-                </div>
-            </div>
-        </div>
+    </div>
+</nav>
+<!--- Main -->
+    {% block content %}
+    {% endblock %}
     </body>
 </html>

@@ -1,12 +1,16 @@
 {% extends 'car/base.html' %}
 
 {% block content %}
+
     <h2>Continue story:</h2>
     <p>Previous contributor: {{ last_user }}</p>
     <p>Lines count: {{ story_rand.count  }}</p>
-    <p>Last line: {{ story_rand.last_added_text }} </p>
-    <form method="POST" class="post-form">{% csrf_token %}
+    <p>Previous line: {{ story_rand.last_added_text }} </p>
+    <p>Limitation is 140 symbols.</p>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-primary btn-block">Continue story</button>
     </form>
+
 {% endblock %}

@@ -75,9 +75,8 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.facebook.FacebookOAuth2', # for FB authentication
     'social_core.backends.google.GoogleOAuth2',  # for Google authentication
-
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -133,6 +132,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIR = ( os.path.join(BASE_DIR, 'static') )
 LOGIN_REDIRECT_URL = '/'
 
 LOGIN_URL = 'login'

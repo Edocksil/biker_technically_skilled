@@ -1,15 +1,24 @@
 {% extends "car/base.html" %}
 
 {% block content %}
-  <form action="" method="post">
+<div class="container cd-flex flex-column justify-content-center flex-fill">
+    <div class="row">
+        <div class="col-xl-12">
+    <form action="" method="post">
       {% csrf_token %}
       <!-- as_p для того, чтобы каждый элемент формы был с новой строки -->
       {{ form.as_p }}
-      <button type="submit">Register</button>
+     <button type="submit" class="btn btn-warning btn-block">Register</button>
     </form>
-<br>
-  <p><strong>-- OR --</strong></p>
-  <a href="{% url 'social:begin' 'google-oauth2' %}">Register with Google</a><br>
-  <p><strong>-- OR --</strong></p>
-  <a href="{% url 'social:begin' 'facebook' %}">Register with Facebook</a>
+            <br>
+  <p class="text-center">-- OR --</p>
+            <a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-danger btn-lg btn-block" role="button" aria-pressed="true">
+                Google <i class='fab fa-google'></i>
+            </a>
+             <a href="{% url 'social:begin' 'facebook' %}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">
+                Facebook <i class='fab fa-facebook'></i>
+            </a>
+        </div>
+    </div>
+</div>
 {% endblock %}

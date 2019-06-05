@@ -1,12 +1,10 @@
 {% extends 'car/base.html' %}
 
 {% block content %}
+<div class="container-fluid">
     <div class="story">
-
-        {% if user.is_authenticated %}
-             <a class="btn btn-default" href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-        {% endif %}
-        <h1>{{ story.last_added_text }}</h1>
+        <h2>{{ story.last_added_text }}</h2>
         <p>{{ story.text|linebreaksbr }}</p>
     </div>
+</div>
 {% endblock %}

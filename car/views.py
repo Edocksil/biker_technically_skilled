@@ -15,7 +15,7 @@ from django.db.models import Count
 def homepage(request):
     return render(request, 'car/homepage.html', {})
 
-# used DJANGO implementation for login(out)
+# used DJANGO implementation for login(out) instead of it:
 """ 
 class LoginFormView(FormView):
     form_class = AuthenticationForm
@@ -62,7 +62,10 @@ def story_list(request):
     try:
         if (User.is_authenticated):
             stories = Story.objects.filter(contributors=request.user, finished=True)
-            return render(request, 'story/story_list.html', {'stories': stories})
+            if stories.count() == 0:
+                return render(request, 'story/no_storys_left.html')
+            else:
+                return render(request, 'story/story_list.html', {'stories': stories})
         else:
             render(request, '', {})
     except TypeError:
@@ -92,13 +95,13 @@ def story_add(request):
             return redirect('homepage')
     else:
         form = StoryForm()
-    return render(request, 'story/story_add.html', {'form':form})
+    return render(request, 'story/story_add.html', {'form': form})
 
 def story_continue(request):
     try:
         storys = Story.objects.filter(contributors=request.user)
     except TypeError:
-        return render(request, 'story/homepage.html')
+        return render(request, 'car/homepage.html')
     story_rand = ''
     last_user = ''
     x = True
@@ -110,14 +113,14 @@ def story_continue(request):
             last_user= story_rand.last
             if (last_user!= User.get_username(request.user)):
                 x = False
-            if (retries > 10):
+            if (retries > 100):
                 raise ZeroDivisionError('no stories for you')
     except AttributeError:
         return render(request, 'story/no_storys_left.html')
     except ZeroDivisionError:
         return render(request, 'story/no_storys_left.html')
 
-    if story_rand.count<5:
+    if story_rand.count<10:
         StoryFormVar = StoryForm(request.POST, instance=story_rand)
     else:
         StoryFormVar = StoryAddForm(request.POST, instance=story_rand)
@@ -129,17 +132,16 @@ def story_continue(request):
             story.contributors.add(request.user)
             story.text = story.text + "\n" + story.last_added_text
             story.last = request.user.username
-            if (story.count<5):
+            if (story.count<10):
                 story.finished = False
-            else:
-                story.finished = story.finished
+
+            story.finished = story.finished
             story.count += 1
             story.save()
             return redirect('homepage')
     else:
         form = StoryFormVar
-    return render(request, 'story/story_continue.html', {'form': form , 'story_rand': story_rand , 'last_user':last_user})
-
+    return render(request, 'story/story_continue.html', {'form': form, 'story_rand': story_rand, 'last_user': last_user})
 
 class Stat:
     def __init__(self, name):
@@ -149,26 +151,24 @@ class Stat:
         self.total_stories=Story.objects.count()
 
         self.best_contributor=Story.objects.values('contributors').annotate(dcontributor=Count('contributors')).order_by('-dcontributor').first()
-        self.best_count=self.best_contributor.get( 'dcontributor')
+        self.best_count=self.best_contributor.get('dcontributor')
         self.best_user=User.objects.filter(id=self.best_contributor['contributors']).values('username').get()
 
 
         self.worst_contributor=Story.objects.values('contributors').annotate(dcontributor=Count('contributors')).order_by('dcontributor').first()
-        self.worst_count=self.worst_contributor.get( 'dcontributor')
+        self.worst_count=self.worst_contributor.get('dcontributor')
         self.worst_user=User.objects.filter(id=self.worst_contributor['contributors']).values('username').get()
 
         self.test = Story.objects.values('count').annotate(dcount=Count('count'))
-
-
 
 def statistics(request):
     try:
         storys = Story.objects.filter(contributors=request.user)
     except TypeError:
-        return render(request, 'story/homepage.html')
+        return render(request, 'car/homepage.html')
 
     full_statistic=Stat('Stat_object')
-    return render(request,'car/statistics.html', {'full_statistic':full_statistic})
+    return render(request, 'car/statistics.html', {'full_statistic': full_statistic})
 
 
 

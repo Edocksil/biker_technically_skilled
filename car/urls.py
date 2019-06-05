@@ -1,6 +1,7 @@
 from django.conf.urls import url, include
 from django.urls import path
 from . import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('', views.homepage, name='homepage'),
@@ -12,3 +13,5 @@ urlpatterns = [
     path('story_continue/', views.story_continue, name='story_continue'),
     path('statistics/', views.statistics, name='statistics')
 ]
+
+urlpatterns += staticfiles_urlpatterns()

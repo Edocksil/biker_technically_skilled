@@ -1,10 +1,15 @@
 {% extends 'car/base.html' %}
 
 {% block content %}
-    <h2>WoW! You decided to start a new story! Write something meaningful:</h2>
-    <form method="POST" class="post-form">{% csrf_token %}
+<div class="container-fluid">
+    <h2>WoW!</h2>
+    <p>You decided to start a new story! Write something meaningful!</p>
+    <p>Remember: with great power comes great responsibility!</p>
+    <p>Limitation is 140 symbols.</p>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
         {{ form.as_p }}
-
-        <button type="submit" class="save btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-primary btn-block">Begin story</button>
     </form>
+</div>
 {% endblock %}

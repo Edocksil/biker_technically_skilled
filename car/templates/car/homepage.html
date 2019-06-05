@@ -1,18 +1,101 @@
 {% extends 'car/base.html' %}
 {% block content %}
-	    {% if user.is_authenticated %}
-
-        <p><a href="{% url 'story_add' %}">add story</a></p>
-        <p><a href="{% url 'story_continue' %}">continue story</a></p>
-        <p><a href="{% url 'story_list' %}">finished stories</a></p>
-        <br>
-        <p><a href="{% url 'logout' %}">logout</a></p>
-
-        <p><a href="{% url 'statistics' %}">Statistics</a></p>
-
-    {% else %}
-        <p><a href="{% url 'registration' %}">register</a></p>
-        <br>
-        <p><a href="{% url 'login' %}">login</a></p>
-    {% endif %}
+<!--- Welcome -->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4"> Welcome</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p>Description</p>
+        </div>
+    </div>
+</div>
+<!--- Technologies -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>Built with latest HTML</p>
+        </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg">
+            <i class="fas fa-bold"></i>
+            <h3>BOOTSTRAP4</h3>
+            <p>Built with latest HTML</p>
+        </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg">
+            <i class="fab fa-css3"></i>
+            <h3>CSS3</h3>
+            <p>Built with latest HTML</p>
+        </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <p>Built with latest HTML</p>
+        </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg">
+            <img id="dj_img" src=/static/css/img/dj.jpg alt="Django" class="img-fluid" alt="Responsive image" >
+            <h3>Django</h3>
+            <p>Built with latest HTML</p>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<!--- Team -->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Meet the team</h1>
+        </div>
+    </div>
+</div>
+<!--- Team Cards -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src=/static/css/img/b2.jpg>
+                <div class="card-body">
+                    <h4 class="card-title">Daniel Lotsman</h4>
+                    <h3>//a.k.a CarDan</h3>
+                    <p class="card-text">Team Leader. Technical leader. Technical support</p>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src=/static/css/img/b2.jpg>
+                <div class="card-body">
+                    <h4 class="card-title">Helen Uvarenko</h4>
+                    <h3>//a.k.a Otvarenko</h3>
+                    <p class="card-text">Project Manager. Business Development Manager</p>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src=/static/css/img/b2.jpg>
+                <div class="card-body">
+                    <h4 class="card-title">Viacheslav Kravchenko</h4>
+                    <h3>//a.k.a SlavcoK</h3>
+                    <p class="card-text">Project Architect. Affiliate Manager. Customer service representative</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--- Footer -->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <hr class="light">
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</footer>
 {% endblock %}
