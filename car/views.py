@@ -157,6 +157,10 @@ class Stat:
         self.worst_count=self.worst_contributor.get( 'dcontributor')
         self.worst_user=User.objects.filter(id=self.worst_contributor['contributors']).values('username').get()
 
+        self.test = Story.objects.values('count').annotate(dcount=Count('count'))
+
+
+
 def statistics(request):
     try:
         storys = Story.objects.filter(contributors=request.user)

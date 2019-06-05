@@ -6,4 +6,8 @@
     <p>not finished: {{ full_statistic.unfinished_stories }}</p>
     <p>best contributor: {{ full_statistic.best_user.username }} {{ full_statistic.best_count }}</p>
     <p>worst contributor: {{ full_statistic.worst_user.username }} {{ full_statistic.worst_count }}</p>
+    {%for ob in full_statistic.test%}
+    <p> story lines: {{ ob.count  }} story count: {{ ob.dcount}}</p>
+    {%endfor%}
+
 {% endblock %}
