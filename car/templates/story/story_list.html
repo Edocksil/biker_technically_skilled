@@ -2,6 +2,8 @@
 
 {% block content %}
 <div class="container-fluid">
+    <h2>Here is list of finished stories with your participation:</h2>
+    <br>
     {% for story in stories %}
         <div class="story">
             <h2><a href="{% url 'story_detail' pk=story.pk %}">{{ story.first_added_text_or_name }}</a></h2>

@@ -1,7 +1,7 @@
 {% extends 'car/base.html' %}
 
 {% block content %}
-
+<div class="container-fluid">
     <h2>Continue story:</h2>
     <p>Previous contributor: {{ last_user }}</p>
     <p>Lines count: {{ story_rand.count  }}</p>
@@ -12,5 +12,5 @@
         {{ form.as_p }}
         <button type="submit" class="btn btn-primary btn-block">Continue story</button>
     </form>
-
+</div>
 {% endblock %}
