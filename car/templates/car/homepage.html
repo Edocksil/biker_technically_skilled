@@ -97,16 +97,19 @@
     </div>
 </div>
 <!--- Footer -->
-<footer>
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <hr class="light">
-                <p>Motivated by FREX.</p>
-                <p>Powered by passion</p>
-                <p>Contact us via telepathy</p>
-            </div>
-        </div>
-    </div>
-</footer>
+<footer></footer>
+<script>
+$(document).ready(function(){
+    $("footer").html("<div class=\"container-fluid padding\">\n" +
+        "        <div class=\"row text-center\">\n" +
+        "            <div class=\"col-lg-12\">\n" +
+        "                <hr class=\"light\">\n" +
+        "                <p>Motivated by FRECS.</p>\n" +
+        "                <p>Powered by passion</p>\n" +
+        "                <p>Contact us via telepathy</p>\n" +
+        "            </div>\n" +
+        "        </div>\n" +
+        "    </div>");
+});
+</script>
 {% endblock %}
